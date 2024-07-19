@@ -76,7 +76,7 @@ if st.button("Predict 💀"):
     death_cause = output['Manner of death'].iloc[:10].value_counts().index[0]
 
     st.write('You will likely die at age', round(death_age))
-    st.write('Likely Cause', death_cause)
+    st.markdown(f'''Likely Cause: ${death_cause}$''')
 
 
 st.warning("The predictions here are highly probabilistic and are mostly due to the patterns found in a dataset, It's mostly for educational purposes and  may or may not be when you actually die")
