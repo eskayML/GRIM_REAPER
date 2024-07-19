@@ -8,7 +8,6 @@ from typing import List
 
 
 
-
 model = SentenceTransformer('all-MiniLM-L6-v2')
 df_new = pd.read_csv('small_df.csv')
 
@@ -50,6 +49,7 @@ def search(new_query:str) -> pd.DataFrame:
 
 
 st.title("GRIM REAPER: Predict when you die!💀")
+st.image('grim reaper.jpg', width = 150 )
 
 # Input fields
 name = st.text_input('Enter your name')
